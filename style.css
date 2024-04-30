@@ -1,50 +1,45 @@
-/* Basic reset and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #121212;
     color: #E0E0E0;
     line-height: 1.6;
 }
 
-/* Container styles for centering content */
-.container {
-    width: 90%;
+a {
+    color: #9fa8da; /* Softer blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d1c4e9; /* Lighter purple for hover effect */
+}
+
+header, section, footer {
+    margin: 0 auto;
     max-width: 960px;
-    margin: auto;
     padding: 20px;
+    text-align: center;
 }
 
 header {
     background-color: #1A1A1A;
-    color: #FFF;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px 0;
 }
 
-header nav {
-    margin-top: 10px;
-}
-
-header nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #E0E0E0;
-    text-decoration: none;
-    font-weight: bold;
+nav ul li {
+    display: inline-block; /* Changed for better spacing */
+    margin: 0 15px;
 }
 
 section {
@@ -54,30 +49,15 @@ section {
     border-radius: 8px;
 }
 
-h1, h2 {
-    color: #FFFFFF;
-}
-
-h1 {
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1A1A1A;
+    background-color: #262626; /* Slightly lighter for a subtle visual layering */
     color: #FFF;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin-top: 30px;
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
-    header nav ul li {
+    nav ul li {
         display: block;
         margin-bottom: 10px;
     }
