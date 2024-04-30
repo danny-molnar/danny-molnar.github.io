@@ -1,34 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Basic reset and global styles */
+body, html {
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header, section, footer {
-    margin: 20px auto;
-    padding: 20px;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+/* Container styles for centering content */
+.container {
+    width: 90%;
     max-width: 960px;
-    background: white;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #1A1A1A;
+    color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
 }
 
 header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-h1, h2 {
-    color: #555;
-}
+    list-style-type: none;
+    padding: 
