@@ -1,42 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
+/* General Body Styles */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-color: #1e1e1e; /* Dark gray background, softer than pure black */
-    color: #f0f0f0; /* Soft white for text */
+    background-color: #f5f5f5; /* Lighter gray for background */
+    color: #333; /* Dark gray for text, improving contrast */
     line-height: 1.6;
 }
 
+/* Link Styles */
 a {
-    color: #7986cb; /* Soft blue for links */
+    color: #1e88e5; /* Bright blue for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #5c6bc0; /* Slightly darker blue for hover */
+    color: #0d47a1; /* Darker blue on hover */
 }
 
+/* Header Styles */
 header, section, footer {
     margin: 0 auto;
     max-width: 960px;
     padding: 20px;
-    text-align: left; /* Aligning text to the left */
+    text-align: left; /* Align text to the left for non-centered styling */
 }
 
 header {
-    background-color: #282828; /* Slightly lighter dark shade for header */
+    background-color: #ffffff; /* White background for header */
+    color: #333; /* Dark text for contrast */
     padding: 20px 0;
-    text-align: center; /* Keeping the header text centered */
+    text-align: center; /* Centering header text only */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center; /* Centering the navigation */
+    text-align: center; /* Keeping navigation centered */
 }
 
 nav ul li {
@@ -44,40 +49,57 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Section Styles */
 section {
-    background-color: #2c2c2c; /* Lighter dark gray for sections */
+    background-color: #ffffff; /* White background for sections */
+    color: #333;
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
 }
 
-footer {
-    background-color: #262626; /* Subtle gray for footer */
-    color: #FFF;
-    padding: 20px 0;
-    margin-top: 30px;
-    text-align: center; /* Footer text centered */
+/* Skills and Experience Styling for side-by-side layout */
+.skills-experience > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%; /* Adjusting for side-by-side layout */
+    margin-right: 2%; /* Space between two columns */
 }
 
+.skills-experience > div:last-child {
+    margin-right: 0; /* Removing margin for the last column */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e0e0e0; /* Light gray for footer */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Header Elements */
 h1, h2, h3 {
-    color: #ffffff; /* Ensuring headers are bright enough */
+    color: #333;
 }
 
 h2 {
-    border-bottom: 1px solid #414141; /* Lighter border color for separation */
+    border-bottom: 1px solid #eeeeee; /* Light border for a subtle separator */
     padding-bottom: 10px;
 }
 
+/* List Styles */
 ul {
-    padding-left: 20px; /* Adding padding for bullet points */
+    padding-left: 20px;
 }
 
 li {
-    margin-bottom: 10px; /* Space between list items */
-    color: #b0bec5; /* Light blue-grey for list items, adding a hint of color */
+    margin-bottom: 10px;
+    color: #666; /* Lighter gray for list items */
 }
 
-/* Responsive tweaks */
+/* Responsive Styles for smaller devices */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
