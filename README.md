@@ -1,7 +1,5 @@
 # Danny Molnar's Portfolio Website
 
-![Portfolio Preview](https://your-image-url.com/portfolio-preview.png) <!-- Replace with a screenshot URL of your website -->
-
 Welcome to the repository for my personal portfolio website, hosted at [danny-molnar.github.io](https://danny-molnar.github.io). This site showcases my professional work, including detailed project descriptions, a downloadable CV, and contact information.
 
 ## 🌟 About the Website
