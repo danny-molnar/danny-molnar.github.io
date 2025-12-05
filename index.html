@@ -5,75 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danny Molnar</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph / Social preview (adjust URLs as needed) -->
+    <!-- TODO: update og:image and og:url once deployed -->
+    <meta property="og:title" content="Danny Molnar – Cloud & Platform Engineer">
+    <meta property="og:image" content="https://danny-molnar.github.io/assets/og-image.svg">
+
+    <meta property="og:description" content="AWS consultant, platform engineer and infrastructure tooling developer based in London.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://danny-molnar.github.io/">
+    <meta property="og:image" content="https://danny-molnar.github.io/assets/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <header>
-        <h1>Danny Molnar</h1>
-        <h2>Cloud / DevOps / Platform Engineer</h2>
-        <nav>
+<div class="main-container">
+
+    <header class="site-header">
+        <h1 class="site-title">Danny Molnar</h1>
+        <p class="site-subtitle" id="subtitle-rotator">
+            Cloud / Platform Engineer · AWS Consultant
+        </p>
+
+        <nav class="site-nav">
             <ul>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects" class="active">Projects</a></li>
+                <li><a href="#now">Now</a></li>
                 <li><a href="#cv">Professional Overview</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        This section is under construction... in the meantime have a look at my <a href="https://github.com/danny-molnar" target="_blank">GitHub</a>.
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="section-card">
+            <div class="section-header-row">
+                <h2 class="section-title">Selected Projects</h2>
+                <a class="btn btn-ghost" href="https://github.com/danny-molnar" target="_blank" rel="noopener noreferrer">
+                    View all on GitHub
+                </a>
+            </div>
+            <p class="section-subtext">
+                A few things I’ve been building around infrastructure, Terraform, and tooling.
+            </p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Glyphra</h3>
+                    <p>
+                        AI-assisted infrastructure summariser and tooling playground. Long-term goal:
+                        help teams understand Terraform plans, drift and tagging conventions more easily.
+                    </p>
+                    <p class="project-meta">Go · Terraform · Infra summarisation</p>
+                    <a href="https://github.com/danny-molnar/glyphra" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Terradendro</h3>
+                    <p>
+                        Experimental Terraform plan visualiser and diff classifier, with Markdown exports
+                        for plan reviews and change documentation.
+                    </p>
+                    <p class="project-meta">Go · Terraform · DevEx</p>
+                    <a href="https://github.com/danny-molnar/terradendro" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Inori (language experiments)</h3>
+                    <p>
+                        A long-term language design side quest exploring pipelines, templating and
+                        infra-adjacent computation, inspired by type theory and category theory.
+                    </p>
+                    <p class="project-meta">Language design · DSLs</p>
+                    <a href="https://github.com/danny-molnar" target="_blank" rel="noopener noreferrer">
+                        Experiments ↗
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>gitorch</h3>
+                    <p>
+                        Local Git hygiene CLI to surface divergence, stale branches and repo health so you
+                        don’t accidentally ship from a haunted feature branch.
+                    </p>
+                    <p class="project-meta">Go · Git tooling</p>
+                    <a href="https://github.com/danny-molnar/gitorch" target="_blank" rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+                </article>
+            </div>
+        </div>
     </section>
-    <section id="cv">
-        <h2>Professional Overview</h2>
-        <p><strong>Danny Molnar</strong> - Cloud Systems Developer | DevOps / Platform Engineer based in London, UK.</p>
-    
-        <h3>Professional Summary</h3>
-        <p>Proactive Cloud DevOps Engineer with expertise in architecting, deploying, and enhancing cloud infrastructures within AWS and GCP ecosystems. Skilled in automating infrastructure to streamline CI/CD pipelines and facilitate cloud-native solutions, aiming to improve system robustness, scalability, and efficiency.</p>
-        <div>
+
+    <!-- Now -->
+    <section id="now" class="section">
+        <div class="section-card">
+            <h2 class="section-title">Now</h2>
+            <p class="section-subtext">
+                Inspired by the /now page idea – a quick snapshot of what I’m focused on right now.
+            </p>
+            <ul class="now-list">
+                <li>Consulting on AWS landing zones, CI/CD and platform reliability.</li>
+                <li>Building and refining infra-focused tooling in Go (Glyphra, Terradendro, gitorch).</li>
+                <li>Exploring Rust and language design ideas through Inori.</li>
+                <li>Writing about infrastructure, cost, and ideology on Substack.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Professional Overview -->
+    <section id="cv" class="section">
+        <div class="section-card">
+            <div class="section-header-row">
+                <h2 class="section-title">Professional Overview</h2>
+                <a class="btn btn-primary" href="assets/Danny-Molnar-CV.pdf" target="_blank" rel="noopener noreferrer">
+                    Download CV (PDF)
+                </a>
+            </div>
+
+            <p>
+                <strong>Danny Molnar</strong> – AWS Consultant / Cloud &amp; Platform Engineer based in London, UK.
+                I work mainly on landing zones, infrastructure automation, and developer tooling across AWS
+                (and occasionally GCP).
+            </p>
+
+            <h3>Professional Summary</h3>
+            <p>
+                Cloud and Platform Engineer with experience designing and operating large-scale AWS environments,
+                landing zones and CI/CD platforms. I specialise in Terraform/Terragrunt, GitOps, cost optimisation
+                and observability, with a strong bias towards automation, repeatability, and developer experience.
+                I enjoy building small tools (mostly in Go) around infrastructure to make complex systems more
+                understandable and safer to change.
+            </p>
+
             <h3>Experience</h3>
-            <p>Currently a Cloud Systems Developer at Cloudreach, London, focusing on innovative cloud solutions and automation.</p>
-        </div>
-        
-        <div class="skills-experience">
-            <div>
-                <h3>Tech Stack</h3>
-                <ul>
-                    <li>Cloud Platforms: AWS, GCP</li>
-                    <li>Infrastructure as Code: Terraform, Terragrunt, Terratest</li>
-                    <li>Configuration Management: Ansible</li>
-                    <li>CI/CD: GitHub Actions</li>
-                    <li>Machine Learning on AWS, GCP</li>
-                    <li>Programming: Python, JavaScript, Golang</li>
-                    <li>Containerization: Docker, Kubernetes</li>
-                    <li>Linux Sysadmin and Bash Scripting</li>
-                </ul>
+            <p>
+                Currently working as an <strong>AWS Consultant / Platform Engineer</strong>, helping teams design and
+                operate secure landing zones, CI/CD pipelines and cloud-native platforms (GitLab, Kubernetes,
+                observability stacks, FinOps dashboards).
+            </p>
+            <p>
+                Previous work includes cloud platform engineering and DevOps roles across consultancy and
+                enterprise environments, focusing on infrastructure-as-code, migration projects, and
+                improving deployment reliability.
+            </p>
+
+            <div class="skills-experience columns">
+                <div>
+                    <h3>Tech Stack</h3>
+                    <ul>
+                        <li>Cloud: AWS (primary), GCP experience</li>
+                        <li>Infrastructure as Code: Terraform, Terragrunt, Terratest</li>
+                        <li>Platform / CI/CD: GitLab, GitHub Actions, Jenkins</li>
+                        <li>Configuration Management: Ansible</li>
+                        <li>Containers &amp; Orchestration: Docker, Kubernetes, k3d/kind</li>
+                        <li>Programming: Go, Python, JavaScript/TypeScript</li>
+                        <li>Observability &amp; Monitoring: Prometheus, Grafana, CloudWatch</li>
+                        <li>FinOps &amp; Cost Insights: AWS CUDOS / CID, Budgets, Compute Optimizer</li>
+                        <li>OS &amp; Tooling: Linux, Bash, Nix (exploring)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Currently Exploring</h3>
+                    <ul>
+                        <li>Deeper Go backend/tooling patterns</li>
+                        <li>Rust and systems-adjacent tooling</li>
+                        <li>Language design experiments (Inori)</li>
+                        <li>GitOps and progressive delivery</li>
+                        <li>ML / Agent-style automation around infra</li>
+                        <li>Advanced Kubernetes &amp; home-lab setups</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>Currently Learning</h3>
-                <ul>
-                    <li>MS Azure</li>
-                    <li>Rust</li>
-                    <li>TypeScript</li>
-                    <li>Anthos Service Mesh</li>
-                    <li>Istio</li>
-                    <li>Grafana - Prometheus</li>
-                    <li>Data Engineering</li>
-                    <li>MLOps</li>
-                </ul>
-            </div>
+
+            <p>
+                For a detailed overview of my professional background, you can read my
+                <a href="assets/Danny-Molnar-CV.pdf" target="_blank" rel="noopener noreferrer">full CV</a>.
+                (If the link 404s, just make sure the filename in <code>assets/</code> matches.)
+            </p>
         </div>
-    
-        <p>For a detailed overview of my professional background,  have a look at my <a href="assets/CV-Danny-Molnar.pdf" target="_blank" rel="noopener noreferrer">full CV</a>.</p>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:danny.molnar@proton.me">Email me</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sandor-daniel-danny-molnar-047323125/" target="_blank">Connect on LinkedIn</a></p>
-        <p>Credly: <a href="https://www.credly.com/users/sandor-daniel-molnar.a8389237" target="_blank">View My Badges on Credly</a></p>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-card">
+            <h2 class="section-title">Contact</h2>
+            <ul class="contact-list">
+                <li>Email:
+                    <a href="mailto:danny.molnar@proton.me">danny.molnar@proton.me</a>
+                </li>
+                <li>LinkedIn:
+                    <a href="https://www.linkedin.com/in/sandor-daniel-danny-molnar-047323125/"
+                       target="_blank" rel="noopener noreferrer">
+                        Connect on LinkedIn
+                    </a>
+                </li>
+                <li>Credly:
+                    <a href="https://www.credly.com/users/sandor-daniel-molnar.a8389237"
+                       target="_blank" rel="noopener noreferrer">
+                        View my certification badges
+                    </a>
+                </li>
+                <li>GitHub:
+                    <a href="https://github.com/danny-molnar" target="_blank" rel="noopener noreferrer">
+                        github.com/danny-molnar
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
-    
-    <footer>
-        <p>Copyright © 2024 Danny Molnar</p>
+
+    <footer class="site-footer">
+        <p>
+            This site is intentionally under-engineered. Complexity is a confession.
+        </p>
+        <p>Copyright &copy; 2025 Danny Molnar.</p>
     </footer>
+
+</div>
+
+<!-- Rotating subtitle script -->
+<script>
+  (function () {
+    var el = document.getElementById('subtitle-rotator');
+    if (!el) return;
+
+    var subtitles = [
+      'Cloud & Platform Engineer · AWS Consultant',
+      'Infrastructure Critic · Go Tooling Developer',
+      'Terraform Symptomatologist · GitOps Curious',
+      'Landing Zones · CI/CD · Infra Automation'
+    ];
+    var idx = 0;
+
+    // Ensure initial text matches first subtitle
+    el.textContent = subtitles[0];
+
+    setInterval(function () {
+      idx = (idx + 1) % subtitles.length;
+      el.textContent = subtitles[idx];
+    }, 4000);
+  })();
+</script>
 </body>
 </html>
