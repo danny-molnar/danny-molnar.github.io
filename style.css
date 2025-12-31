@@ -298,3 +298,16 @@
     margin: 0.1rem 0;
   }
   
+  /* Infrastructure Hermeneutics section (subtle “definition note” styling) */
+#infrastructure-hermeneutics .section-card {
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.06), rgba(2, 6, 23, 0));
+  border-color: rgba(56, 189, 248, 0.22);
+}
+
+#infrastructure-hermeneutics .section-title {
+  letter-spacing: 0.02em;
+}
+
+#infrastructure-hermeneutics p {
+  max-width: 72ch; /* improves readability for a definition block */
+}
